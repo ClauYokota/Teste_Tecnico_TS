@@ -1,0 +1,13 @@
+<h3 mat-dialog-title>5)</h3>
+<div mat-dialog-content>
+    <form action="" [formGroup]="formPalavra" (ngSubmit)="revert()">
+        <mat-form-field>
+            <mat-label>Digite uma palavra</mat-label>
+            <input type="string" matInput formControlName="palavra">
+        </mat-form-field>
+        <button type="submit" [disabled]="formPalavra.invalid" mat-mini-fab
+            color="accent"><mat-icon>play_arrow</mat-icon></button>
+    </form>
+    <p *ngIf="resposta">{{resposta}}</p>
+
+</div>

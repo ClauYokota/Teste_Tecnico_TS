@@ -1,0 +1,13 @@
+<h3 mat-dialog-title>3)</h3>
+<div mat-dialog-content>
+    <mat-list>
+        <mat-list-item>O menor valor de faturamento foi de R$ {{minVetor.valor|currency:'BRL'}} e ocorreu no dia
+            {{minVetor.dia}}.</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>O maior valor de faturamento foi de R$ {{maxVetor.valor|currency:'BRL'}} e ocorreu no dia
+            {{maxVetor.dia}}.</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>O valor de faturamento diário foi superior a média mensal em {{diasFaturamentoAcimaMedia}}
+            dias.</mat-list-item>
+    </mat-list>
+</div>
